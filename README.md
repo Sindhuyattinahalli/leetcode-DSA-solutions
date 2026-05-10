@@ -2,7 +2,7 @@
 
 ---
 # Arrays - Easy
-## [1480 - Arrays/Easy/RunningSum.java](https://leetcode.com/problems/running-sum-of-1d-array/)
+## [1480 - RunningSum.java](https://leetcode.com/problems/running-sum-of-1d-array/)
 ``` DSA
 class Solution {
     public int[] runningSum(int[] nums) {
@@ -18,7 +18,7 @@ class Solution {
 ```
 ---
 
-## [ Arrays/Easy/Second Largest](https://www.geeksforgeeks.org/problems/second-largest3735/)
+## [Second Largest](https://www.geeksforgeeks.org/problems/second-largest3735/)
 ```DSA
 class Solution {
     public int getSecondLargest(int[] arr) {
