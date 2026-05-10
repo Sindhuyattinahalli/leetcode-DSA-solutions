@@ -17,7 +17,7 @@ class Solution {
 }
 ```
 ---
-#Arrays - Easy 
+# Arrays - Easy 
 ## [Second Largest](https://www.geeksforgeeks.org/problems/second-largest3735/)
 ```DSA
 class Solution {
