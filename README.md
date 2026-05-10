@@ -17,8 +17,8 @@ class Solution {
 }
 ```
 ---
-# Arrays - Easy 
-## [Second Largest](https://www.geeksforgeeks.org/problems/second-largest3735/)
+
+## [# Arrays - Easy /Second Largest](https://www.geeksforgeeks.org/problems/second-largest3735/)
 ```DSA
 class Solution {
     public int getSecondLargest(int[] arr) {
