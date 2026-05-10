@@ -12,8 +12,7 @@ class Solution {
             sum = sum + nums[i];
              b[i] = sum ;
         }
-        return b ; 
-        
+        return b ;   
     }
 }
 ```
