@@ -16,3 +16,29 @@ class Solution {
     }
 }
 ```
+---
+#Arrays - Easy 
+## [Second Largest](https://www.geeksforgeeks.org/problems/second-largest3735/)
+```DSA
+class Solution {
+    public int getSecondLargest(int[] arr) {
+        int largest = Integer.MIN_VALUE;
+        int SLargest = Integer.MIN_VALUE;
+        for(int i=0; i<arr.length;i++){
+            if(arr[i] > largest){
+                SLargest = largest;
+                largest = arr[i]; 
+            }
+            else if(arr[i] > SLargest && arr[i] != largest){
+                SLargest = arr[i];
+                } 
+        }
+        return (SLargest == Integer.MIN_VALUE) ? -1 : SLargest;
+    }
+    }
+```
+
+
+
+
+
