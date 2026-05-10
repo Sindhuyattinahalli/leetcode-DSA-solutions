@@ -1,7 +1,7 @@
 # leetcode-DSA-solutions
 
 ---
-# Arrays - easy
+# Arrays - Easy
 ## [1480 - Arrays/Easy/RunningSum.java](https://leetcode.com/problems/running-sum-of-1d-array/)
 ``` DSA
 class Solution {
