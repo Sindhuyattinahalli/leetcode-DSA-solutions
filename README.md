@@ -37,7 +37,41 @@ class Solution {
     }
     }
 ```
+## [1-Two Sum](https://leetcode.com/problems/two-sum/)
+``` DSA
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        int sum;
+        for(int i =0; i<nums.length;i++){
+          for(int j = i+1; j<nums.length;j++){
+            sum = nums[i]+nums[j];
+            if(sum == target){
+                return new int[]{i,j};
+                
+            
+    }
+}
+        }
+        return new int[]{};
+    }
+    
+}
+        
+```
+## [35-Search Insert Position](https://leetcode.com/problems/search-insert-position/)
+```DSA
+class Solution {
+    public int searchInsert(int[] nums, int target) {
+        for(int i=0;i<nums.length;i++){
+            if(nums[i] >= target){
+                return i;
+            }
+        }
+        return nums.length;
 
+    }
+}
+```
 
 
 
