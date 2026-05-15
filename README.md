@@ -88,6 +88,28 @@ class Solution {
     }
 }
 ```
+## [2529 - Maximum Count Of Positive Integer and Negative Integer](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/description/)
+```DSA
+class Solution {
+    public int maximumCount(int[] nums) {
+        int positive = 0;
+        int negative = 0;
+        for(int i=0; i<nums.length;i++){
+            if(nums[i]>0){
+                positive++;
+            }
+            if(nums[i]<0){
+                negative++;
+            }
+        }
+            int max_count = Math.max(positive,negative);
+
+            return max_count;
+        }
+     
+    }
+```
+
 
 # Arrays - Medium
 ## [53-Maximum SubArray](https://leetcode.com/problems/maximum-subarray/)
