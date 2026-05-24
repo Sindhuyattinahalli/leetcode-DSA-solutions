@@ -130,6 +130,35 @@ class Solution {
     }
 }
 ```
+##[1051-Hight Checker](https://leetcode.com/problems/height-checker/)
+```DSA
+class Solution {
+    public int heightChecker(int[] heights) {
+        int arr[] = heights.clone();
+        int count = 0;
+        for(int i=0; i<heights.length-1;i++){
+            int mini = i;
+            for( int j=i;j<heights.length;j++){
+                if(heights[j] < heights[mini]){
+                    mini = j;
+                }
+            }
+            int temp = heights[i];
+            heights[i] = heights[mini];
+            heights[mini] = temp;
+
+        }
+        for(int i=0; i<heights.length;i++){
+        if(arr[i] != heights[i]){
+            count++;
+        }
+        }
+
+    return count;
+        
+    }
+}
+```
 
 
 # Arrays - Medium
