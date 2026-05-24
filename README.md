@@ -109,6 +109,27 @@ class Solution {
      
     }
 ```
+## [905 -Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/)
+```DSA
+class Solution {
+    public int[] sortArrayByParity(int[] nums) {
+        int [] b = new int[nums.length];
+        int j =0;
+        for(int i =0; i<nums.length;i++){
+                if(nums[i]%2==0){
+                    int temp = nums[i];
+                    nums[i] = nums[j];
+                    nums[j] = temp;
+                    j++;
+                }
+                
+            }
+            return nums;
+        
+        
+    }
+}
+```
 
 
 # Arrays - Medium
