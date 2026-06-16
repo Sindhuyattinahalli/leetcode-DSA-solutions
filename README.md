@@ -219,6 +219,25 @@ class Solution {
 ```
 
 
+## [167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
+```
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        for(int i=0;i<nums.length;i++){
+            for(int j = i+1;j<nums.length;j++){
+                if(nums[i]+nums[j] == target){
+                    return new int[]{i+1, j+1};
+                }
+            }
+            
+    }
+    return new int[]{-1, -1}; 
+}
+}
+```
+
+
+
 
 
 
