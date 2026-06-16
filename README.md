@@ -159,7 +159,7 @@ class Solution {
     }
 }
 ```
-## [1365 -How-Many-Numbers-Are-Smaller-Than-The-Current-Number] (https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/)
+## [1365 -How-Many-Numbers-Are-Smaller-Than-The-Current-Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/)
 ```DSA
 class Solution {
     public int[] smallerNumbersThanCurrent(int[] nums) {
