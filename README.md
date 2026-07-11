@@ -178,8 +178,53 @@ class Solution {
 }
 }
 ```
+## [1752 - Check if Array is Sorted and Rotated](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/)
+```DSA
+class Solution {
+    public boolean check(int[] nums) {
+        int count = 0;
 
+        for (int i = 0; i < nums.length - 1; i++) {
+            if (nums[i] > nums[i + 1]) {
+                count++;
+            }
+        }
 
+        if (nums[nums.length - 1] > nums[0]) {
+            count++;
+        }
+
+        if (count <= 1)
+            return true;
+        else
+            return false;
+    }
+}
+```
+## [26-Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
+```DSA
+class Solution {
+    public int removeDuplicates(int[] nums) {
+
+        if (nums.length == 0) {
+            return 0;
+        }
+
+        int k = 1;
+
+        for (int i = 1; i < nums.length; i++) {
+
+            if (nums[i] != nums[k - 1]) {
+                nums[k] = nums[i];
+                k++;
+            }
+
+        }
+
+        return k;
+    }
+}
+```
 
 # Arrays - Medium
 ## [53-Maximum SubArray](https://leetcode.com/problems/maximum-subarray/)
