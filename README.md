@@ -225,6 +225,41 @@ class Solution {
     }
 }
 ```
+## [217 Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
+```DSA
+class Solution {
+    public boolean containsDuplicate(int[] nums) {
+        Arrays.sort(nums);
+        for(int i =0;i<nums.length-1;i++){
+            if(nums[i] == nums[i+1]){
+                return true;
+            }
+        }
+        return false;
+        
+    }
+}
+```
+## [121 Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+```DSA
+class Solution {
+    public int maxProfit(int[] prices) {
+        int minprice = Integer.MAX_VALUE;
+        int maxprice = 0;
+        for(int price:prices){
+            if(minprice > price){
+                minprice = price;
+            }
+            else{
+                int profit = price - minprice;
+                maxprice = Math.max(maxprice,profit);
+            }
+        }
+
+        return maxprice;
+    }
+}
+```
 
 # Arrays - Medium
 ## [53-Maximum SubArray](https://leetcode.com/problems/maximum-subarray/)
@@ -280,6 +315,37 @@ class Solution {
 }
 }
 ```
+## [11 Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
+```DSA
+class Solution {
+    public int maxArea(int[] height) {
+
+        int left = 0;
+        int right = height.length-1;
+        int maxarea = 0 ;
+        
+        while(left < right){
+        int width = right - left;
+        int minheight = Math.min(height[left], height[right]);
+        int area = width*minheight;
+        maxarea = Math.max(maxarea,area);
+
+        if(height[left]<height[right]){
+            left++;
+        }
+        else{
+            right--;
+        }
+        }
+        return maxarea;
+    }
+}
+        
+```
+        
+            
+
+
 
 
 
